@@ -9,10 +9,22 @@
       </NuxtLink>
     </div>
 
+    <SidebarLeftTab active>
+      <template v-slot:icon>
+        <HomeIcon/>
+      </template>
+
+      <template v-slot:name>
+        Home
+      </template>
+    </SidebarLeftTab>
+
   </div>
 </template>
 
 <script setup>
+import {HomeIcon} from '@heroicons/vue/solid';
+
 const {defaultTransition} = useTailwindConfig();
 
 </script>
