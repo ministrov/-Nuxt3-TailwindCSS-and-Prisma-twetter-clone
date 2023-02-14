@@ -19,14 +19,81 @@
       </template>
     </SidebarLeftTab>
 
+    <SidebarLeftTab>
+      <template v-slot:icon>
+        <HashtagIcon/>
+      </template>
+
+      <template v-slot:name>
+        Explore
+      </template>
+    </SidebarLeftTab>
+
+    <SidebarLeftTab>
+      <template v-slot:icon>
+        <BellIcon/>
+      </template>
+
+      <template v-slot:name>
+        Notifications
+      </template>
+    </SidebarLeftTab>
+
+    <SidebarLeftTab>
+      <template v-slot:icon>
+        <InboxIcon/>
+      </template>
+
+      <template v-slot:name>
+        Message
+      </template>
+    </SidebarLeftTab>
+
+    <SidebarLeftTab>
+      <template v-slot:icon>
+        <BookmarkIcon/>
+      </template>
+
+      <template v-slot:name>
+        Bookmarks
+      </template>
+    </SidebarLeftTab>
+
+    <SidebarLeftTab>
+      <template v-slot:icon>
+          <DocumentTextIcon />
+      </template>
+      <template v-slot:name>
+          Lists
+      </template>
+    </SidebarLeftTab>
+
+    <SidebarLeftTab>
+      <template v-slot:icon>
+          <UserIcon />
+      </template>
+      <template v-slot:name>
+          Profile
+      </template>
+    </SidebarLeftTab>
+
+    <SidebarLeftTab>
+      <template v-slot:icon>
+          <DotsCircleHorizontalIcon />
+      </template>
+      <template v-slot:name>
+          More
+      </template>
+    </SidebarLeftTab>
+
   </div>
 </template>
 
 <script setup>
-import {HomeIcon} from '@heroicons/vue/solid';
+import { HomeIcon } from "@heroicons/vue/solid";
+import { HashtagIcon, BellIcon, InboxIcon, BookmarkIcon, DocumentTextIcon, UserIcon, DotsCircleHorizontalIcon} from "@heroicons/vue/outline";
 
 const {defaultTransition} = useTailwindConfig();
-
 </script>
 
 <style lang="scss" scoped>
