@@ -3,7 +3,9 @@
 
     <div class="bg-white dark:bg-dim-900">
 
-      <div class="min-h-full">
+      <!-- App -->
+
+      <div v-if="false" class="min-h-full">
 
         <div class="grid grid-cols-12 mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:gap-5">
 
@@ -15,8 +17,8 @@
           </div>
 
           <!-- Main content -->
-          <main class="col-span-12 bg-red-500 md:col-span-8 xl:col-span-6">
-            <h1>Main</h1>
+          <main class="col-span-12 md:col-span-8 xl:col-span-6">
+            <RouterView/>
           </main>
 
           <!-- Right sidebar -->
@@ -29,6 +31,8 @@
         </div>
 
       </div>
+
+      <AuthPage v-else/>
 
     </div>
 

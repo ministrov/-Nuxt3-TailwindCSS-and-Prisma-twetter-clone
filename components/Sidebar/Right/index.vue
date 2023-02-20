@@ -27,9 +27,9 @@
             <img class="w-10 h-10 rounded-full" :src="whoToFollow.image" :alt="whoToFollow.name">
 
             <div class="flex flex-col ml-2">
-                <h1 class="text-sm font-bold text-gray-900 dark:text-white">{{ whoToFollow.name }}
-                </h1>
-                <p class="text-xs text-gray-400">{{ whoToFollow.handle }}</p>
+              <h1 class="text-sm font-bold text-gray-900 dark:text-white">{{ whoToFollow.name }}
+              </h1>
+              <p class="text-xs text-gray-400">{{ whoToFollow.handle }}</p>
             </div>
           </div>
           <div class="flex h-full">
